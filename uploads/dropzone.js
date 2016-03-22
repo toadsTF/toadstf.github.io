@@ -156,7 +156,7 @@
       init: function() {
         return noop;
       },
-      forceFallback: false,
+      forceFallback: true,
       fallback: function() {
         var child, messageElement, span, _i, _len, _ref;
         this.element.className = "" + this.element.className + " dz-browser-not-supported";
