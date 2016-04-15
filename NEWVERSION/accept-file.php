@@ -9,8 +9,25 @@ if (file_exists($target_file)) {
     $uploadOk = 0;
 }
 // Allow certain file formats
-if($imageFileType != "ezm") {
-    echo "Sorry, only.EZM files are allowed.";
+if($imageFileType == "ezm") {
+    $target_dir = "uploads/ezm/";
+    $uploadOk = 1;
+}
+if($imageFileType == "bsp") {
+    $target_dir = "uploads/maps/";
+    $uploadOk = 1;
+}
+if($imageFileType == "vmf") {
+    $target_dir = "uploads/hammer_saves/";
+    $uploadOk = 1;
+}
+if($imageFileType == "pff") {
+	//pff = prefab file format
+    $target_dir = "uploads/prefabs/";
+    $uploadOk = 1;
+}
+if($imageFileType != "ezm" && $imageFileType != "bsp" && $imageFileType != "vmf" && $imageFileType != "pff") {
+    echo "Sorry, the only file formats permitted are: .ezm, .bsp, .vmf, and .pff"
     $uploadOk = 0;
 }
 // Check file size
