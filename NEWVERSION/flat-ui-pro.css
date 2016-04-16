@@ -5630,12 +5630,14 @@ a.list-group-item > .badge,
   }
 .navbar-nav {
   margin: 0;
+  display: inline;
   }
 .navbar-nav > li > a {
   padding: 15px 21px;
   font-size: 16px;
   font-weight: 700;
   line-height: 23px;
+  display: inline;
   }
 .navbar-nav > li > a:hover,
 .navbar-nav > li > a:focus,
@@ -5647,6 +5649,7 @@ a.list-group-item > .badge,
   position: relative;
   top: 1px;
   line-height: 20px;
+  display: inline;
   }
 .navbar-nav .visible-sm > [class^="fui-"],
 .navbar-nav .visible-xs > [class^="fui-"] {
@@ -5666,6 +5669,7 @@ a.list-group-item > .badge,
   .navbar-nav > li > a {
     padding-top: 7px;
     padding-bottom: 7px;
+	display: inline;
     }
   }
 .navbar-input {
