@@ -1,7 +1,10 @@
 <html lang="en">
 	<head>
 	<style>
+	#red_text {color:red; display:inline;}
+	#file_upload {type:file;}
 	</style>
+	
 		<meta charset="utf-8" />
 		<title>mapper.tf</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +14,7 @@
 				<link rel="publisher" href="https://pepetoads.com"/>
 
 
-				<body style="background-color:#8FB9E9;">
+				<body style="background-color:#D6F8FF;">
 
 					<!-- Open Graph Protocol -->
 					<meta property="og:type" content="website" />
@@ -29,7 +32,7 @@
 			<div class="hover-over-title"></div>
 			<div class="hover-over-content"></div>
 		</div>
-					<nav class="navbar yamm navbar-default navbar-fixed-top" style="background-color:lightblue;align:center;height:195">
+					<nav class="navbar-fixed-top" style="background-color:#EDFFFF;align:center;height:195">
 						<h1>
 							<img src="tf2_logo.png" style="width:140px;height:140px;" align="left">
 								<i18n rel="#welcome">Mapper.tf</i18n>
@@ -54,7 +57,7 @@
 
 				
 						
-						<div class="content" style="background-color:#8FB9E9;text-align:center;">
+						<div class="content" style="text-align:center;">
 							<br>
 								<br>
 									<br>
@@ -66,13 +69,13 @@
 													<form action="accept-file.php" method="post" enctype="multipart/form-data">
 														<h5>Select file to upload:</h5>
 			(.ezm,.bsp,.vmf,.pff)
-														<br>
-															<input type="file" name="fileToUpload" id="fileToUpload">
-																<input type="submit" value="Upload File" name="submit">
+														<br><br>
+															<input id="file-upload" type="image" value="XDDDDDDDD" name="fileToUpload" id="fileToUpload" src="choose_file.png">
+															<input type="image" value="Upload File" name="submit" src="upload.png">
 																</form>
 		____________________________________________________________
 															</div>
-															<div class="content" style="text-align:center;background-color:#8FB9E9;">
+															<div class="content" style="text-align:center;background-color:#white;">
 																<a href="http://mapper.site88.net/uploads/uploads">You can find the files uploaded to the workshop here!</a>
 																<br>
 		____________________________________________________________
@@ -81,7 +84,7 @@
 																<br>
 																<br>
 																
-																<div class="container" style="background-color:#8FB9E9;text-align:center;">
+																<div class="container" style="background-color:#white;text-align:center;">
 																	<a href="http://github.com/baldengineers/easytf2_mapper" target="_blank">
 																		<img src="themapper.png" align="center">
 																		</a>
@@ -93,8 +96,8 @@
 																	<h3>What is the Mapper?</h3>
 																	
 																	<p>The mapper is a <i>*highly efficient*</i> program coded entirely in python.<!-- With this
-																	program, the learning curve of hammer is no more.--> Directed at both n00bs and hammer
-																	veterans, this program eliminates the learning curve of hammer and also speeds up the
+																	program, the learning curve of hammer is no more.--> Directed at both amateurs and Hammer
+																	veterans, this program eliminates the learning curve of Hammer and also speeds up the
 																	map-making process for those people, respectively. Features include: </p>
 																	
 																	<li>Creating simple maps with the press of a few buttons</li> 
@@ -105,17 +108,39 @@
 																	<p>Now <em>you</em> can create your very own TF2 map without any previous knowledge
 																	of Hammer.</p>
 																	
-																	<img src="https://camo.githubusercontent.com/51e84d4421e240689349f71ba430c0edeb5ff51b/687474703a2f2f692e696d6775722e636f6d2f314372563075412e6a70672532303d343337783338332e35">
-																		
-																		
-																		<br>
+																	<br>
 		You can find the mapper at <a href="http://github.com/baldengineers/easytf2_mapper">http://github.com/baldengineers/easytf2_mapper</a>. You can find instructions on the wiki for how to operate it.
 																			<br>
+																	
+																	<h4>Screenshots<h4>
+																	
+																	<img src="http://i.imgur.com/1CrV0uA.jpg" style="width:437px;height:383.5px">
+															
+																	<img src="http://i.imgur.com/G7qt1Ir.jpg" style="width:437px;height:383.5px">
+																	
+																	<img src="http://i.imgur.com/Sh28kDW.png" style="width:437px;height:383.5px">
+																	
+																	<img src="http://i.imgur.com/zE9KlIm.jpg" style="width:437px;height:383.5px">
+																	
+																	<img src="http://i.imgur.com/1xTPxxy.jpg" style="width:437px;height:383.5px">
+																		
+																			
+																		
 																				<br>
 																				<h4>Downloads</h4>
-																				<A NAME="dwnlds">
+																				<A NAME="dwnlds"></A>
+																				
+																				<p>For Devs:</p>
+																				
 																				<a href="https://github.com/baldengineers/easytf2_mapper/archive/master.zip">Easy TF2 Mapper Latest Version (source, modules required)</a>
 																				<br>
+																				<a href="http://github.com/baldengineers/easytf2_mapper/wiki/Required-Modules(Source)">Required Modules for Source Code</a>
+																				<br>
+																				______
+																				<br>
+																				
+																				<p>Windows Executable</p>
+																				
 																				<a href="https://drive.google.com/open?id=0B0SIyq2R_iJVcFIyZDR3VktyNkE">Easy TF2 Mapper Beta 2.5.5 (win)</a>
 																				<br>
 																				<a href="https://drive.google.com/open?id=0B0SIyq2R_iJVRjg1RzViWkhhdWc">Easy TF2 Mapper Beta 2.5.1 (win)</a>
@@ -126,15 +151,18 @@
 																					<p>We are a group of two TF2 players that also happen to know a bit of programming. While we aren't playing TF2, you will probably find us developing one of our newest programs. Right now, we only have one program: The Easy TF2 Mapper.
                         More are still to come, so keep your fingers crossed. If you would like to follow our programs, please check out our <a href="https://github.com/baldengineers">Github page</a>. Thanks, and have fun.</p>
 																					<div class="nav3">
-																						<a href="http://steamcommunity.com/id/jonyTF">
+																					<div class="caption">
+																					
+																						<a href="http://steamcommunity.com/id/jonyTF" style="text-align:bottom;">
 																							<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/3f/3f9fb9074680bd7a066f7a20df036892652c71bf_full.jpg" alt="jonypic" style="width:184px;height:184px">
-																							</a>					
-																							<a href="http://steamcommunity.com/id/pepetoads">
-																								<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/87/873b77eab0cb20140208f995808902a32e428cd6_full.jpg" alt="toadspic" style="width:184px;height:184px">
-																								</a>
-																							</div>
-																							<div class="content" align="center">
-																								<h5>jony_tf | toadstf</h5>
+																							jony
+																						</a>					
+																						<a href="http://steamcommunity.com/id/pepetoads">
+																							<img src="http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/87/873b77eab0cb20140208f995808902a32e428cd6_full.jpg" alt="toadspic" style="width:184px;height:184px">
+																							toads
+																						</a>
+																						
+																					</div>
 																							</div>
 																							<br>
 																						</div>
