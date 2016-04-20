@@ -1,7 +1,3 @@
-<head>
-<script type='text/javascript'>
-//<![CDATA[
-$(window).load(function(){
 var dynamicTable = (function() {
 
   var _tableId, _table,
@@ -139,17 +135,3 @@ $(document).ready(function(e) {
   });
 
 });
-
-});
-//]]> 
-</script>
-<link rel="stylesheet" href="style.css" />
-</head>
-
-<table id="data-table"></table>
-
-<br />
-<button id="btn-load">Load List 1</button>&nbsp;
-<button id="btn-update">Load List 2</button>&nbsp;
-<button id="btn-append">Append List 1</button>&nbsp;
-<button id="btn-clear">Clear List</button>&nbsp;
