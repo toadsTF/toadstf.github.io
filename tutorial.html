@@ -1,0 +1,305 @@
+<link rel="stylesheet" href="flat-ui-pro.css" />
+<link rel="stylesheet" href="styles.1460675899.css"/>
+
+	<style>
+	</style>
+	
+		<meta charset="utf-8" />
+		<title>Quick-Reference Guide</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta http-equiv="Content-Language" content="en">
+				<meta name="description" content="Mapper.tf contains the 'workshop' for the easy tf2 mapper"/>
+				<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0, user-scalable=no" />
+				<link rel="publisher" href="https://tf2mapper.com"/>
+
+
+				<body>
+
+					<!-- Open Graph Protocol -->
+					<meta property="og:type" content="website" />
+					<meta property="og:url" content="https://mapper.tf" />
+					<meta property="og:title" content="mapper.tf - " />
+					<meta property="og:locale" content="en_US" />
+					<meta property="og:description" content="Mapper.tf - website for the Easy TF2 Mapper" />
+					<link rel="icon" href="favicon.ico">
+					<!-- CSS stylesheet -->
+					<link rel="stylesheet" crossorigin="anonymous" integrity="sha256-0xvvRQ7me2T5twv99B/k4AxlQ4cFzB+7SOpgJtOl1pc=" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css"/>
+					<link rel="stylesheet" href="flat-ui-pro.css" />
+					<link rel="stylesheet" href="styles.1460675899.css"/>
+					<!--testing-->
+					</head>
+					<div class="hover-over">
+			<div class="hover-over-title"></div>
+			<div class="hover-over-content"></div>
+		</div>
+		<nav class="navbar yamm navbar-default navbar-fixed-top">
+			<div class="container">
+			<div class="navbar-header">
+			
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
+					<span class="sr-only">Toggle navigation</span>
+				</button>
+				
+				<a href="../index.html" accesskey="1">
+					<img src="../themapper.png" style="" class="navbar-brand big-logo" alt="Logo"/>
+				</a>
+			
+				<a class="navbar-brand small-logo" href="../index.html">
+					<img src="../themapper.png" class="navbar-brand" alt="Logo"/>
+				</a>
+			</div>
+			
+			<div class="collapse navbar-collapse" id="navbar-collapse-01">
+				<ul class="nav navbar-nav">
+						
+					<li style="margin-top: 15px;"><a href="index.html#about" target="_self"><i18n>About</i18n></a></li>
+					<li style="margin-top: 15px;"><a href="index.html#dwnlds" target="_self"><i18n>Download</i18n></a></li>
+					<li style="margin-top: 15px;"><a href="tutorial.html" target="_self"><i18n>Quick-Reference Guide</i18n></a></li>
+					<li style="margin-top: 15px;"><a href="../uploads/index.html" target="_self"><i18n>Workshop</i18n></a></li>
+					<li style="margin-top: 15px;"><a href="http://github.com/baldengineers/easytf2_mapper/wiki" target="_blank"><i18n>Wiki</i18n></a></li>
+					<li style="margin-top: 15px;"><a href="http://github.com/baldengineers/easytf2_mapper/wiki/Tutorial" target="_blank"><i18n>Tutorial</i18n></a></li>
+								
+				</ul>
+			</div>
+		
+							
+		
+		</div>
+		</nav>
+<div class="flat-slate">	
+<div class="container">
+		
+<p style="margin-left: 40px;"><em><span style="font-size: 48px;">T</span>he mapper is very simple to use, because that&#39;s what we designed it for.</em></p>
+
+<p>&nbsp; &nbsp; The main components of the mapper are the work area with the buttons, the list of prefabs, the rotate buttons, and the levels button. There is also a menu bar at the top of the program allowing you to perform various other functions like saving, opening, and exporting your map, creating your own prefabs, and importing community-made prefabs downloaded from the <a href="../uploads/get_files.php" target="_blank">workshop</a>. This guide is just for quick reference: for an in-depth tutorial please check out our&nbsp;video tutorial (currently in the making) or the <a href="https://github.com/baldengineers/easytf2_mapper/wiki/Tutorial">tutorial on our Github page</a>. If you are completely new to mapping, check out the <a href="https://developer.valvesoftware.com/wiki/TF2_Design_Theory" target="_blank">TF2 Map Design Theory</a>.</p>
+
+<hr />
+<table align="center" border="1" cellpadding="5" cellspacing="0" style="width: 1016px; height: 432px;">
+	<caption>Mapper Cheat Sheet</caption>
+	<tbody>
+		<tr>
+			<td><p><a href="tutorial.html#work_area">Work Area</a></p></td>
+			<td><p>Contains the buttons that allow you to create geometry&nbsp;throughout your map.</p></td>
+		</tr>
+		<tr>
+			<td><p><a href="#prefab_list">Prefab List</a></p></td>
+			<td><p>Contains the prefabs to construct the maps.</p></td>
+		</tr>
+		<tr>
+			<td><p><a href="#prefab_control">Prefab Control Buttons</a></p></td>
+			<td><p>Buttons used for reorganizing and removing prefabs.</p></td>
+		</tr>
+		<tr>
+			<td><p><a href="#rotate_btns">Rotate Buttons</a></p></td>
+			<td><p>Used to rotate the prefabs in four different directions.</p></td>
+		</tr>
+		<tr>
+			<td><p><a href="#levels_btn">Levels Button</a></p></td>
+			<td><p>Used to change the current level of the map you are editing.</p></td>
+		</tr>
+		<tr>
+			<td><p><a href="#file_menu">File Menu</a></p></td>
+			<td>
+			<p><a href="#new"><strong>New</strong></a> &gt; Creates a new mapper project.</p>
+
+			<p><a href="#open"><strong>Open</strong></a> &gt; Open a previously saved mapper project.</p>
+
+			<p><a href="#save"><strong>Save</strong></a> &gt; Saves&nbsp;the current mapper project.</p>
+
+			<p><a href="#save_as"><strong>Save As</strong></a> &gt; Saves the current mapper project with a new filename.</p>
+
+			<p><strong><a href="#import">Import</a> &gt; <a href="#prefab">Prefab </a></strong>&gt; Imports a zipped prefab that was created using the program.</p>
+
+			<p><strong><a href="#export">Export</a> &gt; <a href="#as_vmf">as .VMF</a></strong> &gt; Exports the current mapper project as a .VMF file, which is compatible with <a href="https://developer.valvesoftware.com/wiki/Valve_Hammer_Editor" target="_blank">Valve&#39;s&nbsp;Hammer Map Editor</a>.</p>
+
+			<p><strong><a href="#exit">Exit</a> &gt; </strong>Exits the application.</p>
+			</td>
+		</tr>
+		<tr>
+			<td><p><a href="#options_menu">Options Menu</a></p></td>
+			<td>
+			<p><a href="#change_grid"><strong>Change Grid Size</strong></a> &gt; Changes the current grid size in the work area to whatever you set it to. <strong><span style="color: rgb(255, 0, 0);">You will lose any unsaved progress.</span></strong></p>
+
+			<p><strong><a href="#change_skybox">Change Skybox</a> &gt;</strong>&nbsp;Changes the current skybox to whatever you select.</p>
+			</td>
+		</tr>
+		<tr>
+			<td><p><a href="#tools_menu">Tools&nbsp;Menu</a></p></td>
+			<td>
+			<p><strong><a href="#create_prefab">Create Prefab</a> &gt;&nbsp;</strong>Used to create your own custom prefabs. Be warned: this tool has a few known bugs, so use at your own risk.</p>
+
+			<p><a href="#open_hammer"><strong>Open Hammer</strong></a>&nbsp;&gt; Opens up hammer from whatever directory you set it to.</p>
+
+			<p><strong><a href="#dev_console">Developer Console</a> &gt; </strong>Meant purely for developers&nbsp;and advanced users.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<h2>Supplementary Picture Tutorial:</h2>
+
+<p><a name="work_area"></a></p>
+
+<h3 style="margin-left: 40px;">&nbsp;Work Area</h3>
+
+<p style="margin-left: 80px;">The work area contains the buttons that allow you to create geometry&nbsp;throughout your map. Clicking a button places the currently selected prefab in the <a href="#prefab_list">prefab list</a> in that spot of the grid.</p>
+
+<p style="margin-left: 80px;">&nbsp;<img alt="The Work Area" src="/img/workarea.PNG" /></p>
+
+<p><a name="prefab_list"></a></p>
+
+<h3 style="margin-left: 40px;">Prefab List</h3>
+
+<p style="margin-left: 80px;">The prefab list contains the prefabs to construct the maps. Click a prefab to select it.&nbsp;</p>
+
+<p style="margin-left: 80px;"><img alt="The Prefab List" src="/img/prefab_list.PNG" /></p>
+
+<p><a name="prefab_control"></a></p>
+
+<h3 style="margin-left: 40px;">Prefab Control Buttons</h3>
+
+<p style="margin-left: 80px;">The prefab control buttons allow you to reorganize and remove prefabs. The up arrow button moves the selected prefab up one level in the list, and the down arrow moves it down one level in the list. If you click on the trashcan icon, it prompts you to delete&nbsp;the selected prefab. <span style="color:#FF0000;"><b>WARNING: This action cannot be undone.</b></span></p>
+
+<p style="margin-left: 80px;"><img alt="The Prefab Controls" src="/img/prefab_control.png" /></p>
+
+<p><a name="rotate_btns"></a></p>
+
+<h3 style="margin-left: 40px;">Rotate Buttons</h3>
+
+<p style="margin-left: 80px;">The rotate buttons are used to rotate the prefabs in the four different directions. Click the right rotation button to rotate clockwise, and the left rotation button to rotate counter-clockwise. The current rotation is shown in the middle of the two buttons</p>
+
+<p style="margin-left: 80px;"><img alt="The Rotate Buttons" src="/img/rotate_btns.gif" /></p>
+
+<p><a name="levels_btn"></a></p>
+
+<h3 style="margin-left: 40px;">Levels Button</h3>
+
+<p style="margin-left: 80px;">The levels button is used to change the current z level of the map you are editing. Click on the button to open a menu that you can use to change the current level you are on.&nbsp;These &quot;levels&quot; are like the stories of a building: level 1 is the ground level, and&nbsp;as you move up in&nbsp;levels, the tiles&#39; distance&nbsp;from the ground&nbsp;increases. The arrows located next to the button are a shortcut to move up/down a level</p>
+
+<p style="margin-left: 80px;"><img alt="The Levels Button" src="/img/levels_btn.png" />&nbsp;<img alt="The Change Level Arrows" src="/img/levels_arrows.png" /></p>
+
+<p style="margin-left: 80px;"><img alt="The Levels Menu" src="/img/levels_menu.png" /></p>
+
+<p><a name="file_menu"></a></p>
+
+<h3 style="margin-left: 40px;">File Menu</h3>
+
+<p style="margin-left: 40px;"><img alt="File Menu" src="/img/file_menu.png" /></p>
+
+<p><a name="new"></a></p>
+
+<h4 style="margin-left: 80px;">New</h4>
+
+<p style="margin-left: 120px;">Creates a new mapper project.</p>
+
+<p><a name="open"></a></p>
+
+<h4 style="margin-left: 80px;">Open</h4>
+
+<p style="margin-left: 120px;">Open a previously saved mapper project (*.ezm).</p>
+
+<p><a name="save"></a></p>
+
+<h4 style="margin-left: 80px;">Save</h4>
+
+<p style="margin-left: 120px;">Saves&nbsp;the current mapper project as an EZ Mapper File (*.ezm).</p>
+
+<p><a name="save_as"></a></p>
+
+<h4 style="margin-left: 80px;">Save As</h4>
+
+<p style="margin-left: 120px;">Saves the current mapper project as an EZ Mapper File (*.ezm) with a new filename.</p>
+
+<p><a name="import"></a></p>
+
+<h4 style="margin-left: 80px;">Import</h4>
+
+<p><a name="prefab"></a></p>
+
+<h4 style="margin-left: 120px;">Prefab</h4>
+
+<p style="margin-left: 160px;">Imports a zipped prefab that was created using the program.</p>
+
+<p style="margin-left: 160px;"><img alt="Import Prefab" src="/img/import_prefab.png" /></p>
+
+<p><a name="export"></a></p>
+
+<h4 style="margin-left: 80px;">Export</h4>
+
+<p><a name="as_vmf"></a></p>
+
+<h4 style="margin-left: 120px;">As .VMF</h4>
+
+<p style="margin-left: 160px;">Exports the current mapper project as a .VMF file, which is compatible with&nbsp;<a href="https://developer.valvesoftware.com/wiki/Valve_Hammer_Editor" target="_blank">Valve&#39;s&nbsp;Hammer Map Editor</a>.</p>
+
+<p style="margin-left: 160px;"><img alt="Export as VMF" src="/img/export_vmf.png" /></p>
+
+<p><a name="exit"></a></p>
+
+<h4 style="margin-left: 80px;">Exit</h4>
+
+<p style="margin-left: 120px;">Exits the application.</p>
+
+<p><a name="options_menu"></a></p>
+
+<h3 style="margin-left: 40px;">Options Menu</h3>
+
+<p style="margin-left: 40px;"><img alt="Options Menu" src="/img/options_menu.png" /></p>
+
+<p><a name="change_grid"></a></p>
+
+<h4 style="margin-left: 80px;">Change Grid Size</h4>
+
+<p style="margin-left: 120px;">Changes the current grid size in the work area to whatever you set it to.&nbsp;<strong><span style="color: rgb(255, 0, 0);">You will lose any unsaved progress.</span></strong></p>
+
+<p style="margin-left: 120px;"><img alt="Change Grid Size" src="/img/change_grid.png" /></p>
+
+<p><a name="change_skybox"></a></p>
+
+<h4 style="margin-left: 80px;">Change Skybox</h4>
+
+<p style="margin-left: 120px;">Changes the current skybox to whatever you select.</p>
+
+<p style="margin-left: 120px;"><img alt="Change Skybox" src="/img/change_skybox.png" /></p>
+
+<p><a name="tools_menu"></a></p>
+
+<h3 style="margin-left: 40px;">Tools Menu</h3>
+
+<p style="margin-left: 40px;"><img alt="Tools Menu" src="/img/tools_menu.png" /></p>
+
+<p><a name="create_prefab"></a></p>
+
+<h4 style="margin-left: 80px;">Create Prefab</h4>
+
+<p style="margin-left: 120px;">Used to create your own custom prefabs. Be warned: this tool has a few known bugs, so use at your own risk.</p>
+
+<ol>
+	<li style="margin-left: 120px;"><strong>Prefab Text</strong> &gt; Enter the name of the prefab as it will appear in the prefab list on the right.</li>
+	<li style="margin-left: 120px;"><strong>Prefab Name</strong> &gt; Enter the filename of the prefab. No spaces allowed.</li>
+	<li style="margin-left: 120px;"><strong>VMF File</strong> &gt; The vmf file for the prefab (exported from hammer)</li>
+	<li style="margin-left: 120px;"><strong>Icon</strong> &gt; The jpg file containing the icon as it will appear in the prefab list on the right.</li>
+	<li style="margin-left: 120px;"><strong>Make Rotations</strong> &gt; Check this if you would like to create rotated version of the prefab.</li>
+	<li style="margin-left: 120px;"><strong>Export Prefab &gt;&nbsp;</strong>Check this if you would like to also save the prefab as a *.zip to upload to the <a href="../uploads/index.html">workshop</a>.</li>
+</ol>
+
+<p style="margin-left: 120px;"><img alt="Create Prefab Menu" src="/img/create_prefab.png" /></p>
+
+<p><a name="open_hammer"></a></p>
+
+<h4 style="margin-left: 80px;">Open Hammer</h4>
+
+<p style="margin-left: 120px;">Opens up hammer from whatever directory you set it to.</p>
+
+<p><a name="dev_console"></a></p>
+
+<h4 style="margin-left: 80px;">Developer Console</h4>
+
+<p style="margin-left: 120px;">Meant purely for developers&nbsp;and advanced users. <span style="color:#FFFFFF;"><span style="font-size:8px;">(Try typing &quot;pootis&quot;)</span></span></p>
+
+<p style="margin-left: 120px;"><img alt="Try typing &quot;pootis&quot;" src="/img/dev_console.png" /></p>
+</div>
+</div>
+
+</body>
+</html>

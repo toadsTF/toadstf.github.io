@@ -1,84 +1,190 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<html lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<style type="text/css">#red_text {color:red; display:inline;}
+	#fileUpload { position:relative; overflow:hidden; margin:10px;}
+	#fileUpload input.upload { position:absolute; top:0; right:0; margin:0; padding:0; cursor:pointer; opacity:0; filter:alpha(opacity=0);}
+	.imgContainer{display:inline-block; float:right;}
+	img.screenshots{width: 900px; height: auto; display:inline; }
+	</style>
+	<title>mapper.tf</title>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+	<meta content="en" http-equiv="Content-Language" />
+	<meta content="The official website of the Bald Engineers' Easy TF2 Mapper" name="description" />
+	<meta content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0, user-scalable=no" name="viewport" />
+	<link href="https://tf2mapper.com" rel="publisher" />
+</head>
+<body style="background-color: rgb(214, 248, 255);"><!-- Open Graph Protocol --></body>
+<meta content="website" property="og:type" />
+<meta content="https://mapper.tf" property="og:url" />
+<meta content="mapper.tf - " property="og:title" />
+<meta content="en_US" property="og:locale" />
+<meta content="The official website of the Bald Engineers' Easy TF2 Mapper" property="og:description" />
+<link href="favicon.ico" rel="icon" /><!-- CSS stylesheet -->
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css" integrity="sha256-0xvvRQ7me2T5twv99B/k4AxlQ4cFzB+7SOpgJtOl1pc=" rel="stylesheet" />
+<link href="flat-ui-pro.css" rel="stylesheet" />
+<link href="styles.1460675899.css" rel="stylesheet" /><!--testing-->
+<div class="hover-over">
+<div class="hover-over-title"></div>
 
-    <head>
+<div class="hover-over-content"></div>
+</div>
+
+<nav class="navbar yamm navbar-default navbar-fixed-top">
+<div class="container">
+<div class="navbar-header"><button class="navbar-toggle" data-target="#navbar-collapse-01" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span></button><a accesskey="1" href="index.html"><img alt="Logo" class="navbar-brand big-logo" src="themapper.png" /> </a> <a class="navbar-brand small-logo" href="index.html"> <img alt="Logo" class="navbar-brand" src="themapper.png" /> </a></div>
+
+<div class="collapse navbar-collapse" id="navbar-collapse-01">
+<ul class="nav navbar-nav"><!--<li style="display:inline;"><a href="index.html" target="_self" img="themapper.png"><img src="tf2_logo.png" align="bottom" style="height:80;width:60;"/></a></li> -->
+	<li style="margin-top: 15px;"><a href="#about" target="_self"><i18n>About</i18n></a></li>
+	<li style="margin-top: 15px;"><a href="#dwnlds" target="_self"><i18n>Download</i18n></a></li>
+	<li style="margin-top: 15px;"><a href="tutorial.html" target="_self"><i18n>Quick-Reference Guide</i18n></a></li>
+	<li style="margin-top: 15px;"><a href="../uploads/index.html" target="_self"><i18n>Workshop (DOES NOT WORK!)</i18n></a></li>
+	<li style="margin-top: 15px;"><a href="http://github.com/baldengineers/easytf2_mapper/wiki" target="_blank"><i18n>Wiki</i18n></a></li>
+	<li style="margin-top: 15px;"><a href="http://github.com/baldengineers/easytf2_mapper/wiki/Tutorial" target="_blank"><i18n>Tutorial</i18n></a></li>
+</ul>
+</div>
+</div>
+
+<div class="crouton"></div>
+</nav>
+<!--testing MOAR stuff--><!--<div class="welcome">
+<div class="container">
+<div class="row">
+<div class="col-md-8 welcome-message">
+<div id="floatyhome">
+<h1><i18n rel="#welcome">Welcome to Mapper.TF</i18n></h1>
+<h3>
+<i18n rel="#welcome2">A Tile-based TF2 Map Maker</i18n>
+</h3>
+</div>
+
+</div>
+</div>
+</div>
+</div> --><!--end testing-->
+<div class="flat-slate">
+<br/>
+<div class="container" style="text-align: center;"><img align="center" draggable="false" src="header.png" style="width: 100%;" />
+<h3 style="color:#8C919B;font-style:italic;margin-top:-650;">A Tile-based TF2 Map Maker</h3>
+<br />
+<br />
+&nbsp;
+<h1>What is the Mapper?</h1>
+
+<p align="left">&nbsp; &nbsp;&nbsp;<span style="line-height: 1.42857;">&nbsp;Coded entirely in&nbsp;</span><samp style="font-size: 14px; line-height: 1.42857;"><font size="3">python</font></samp><span style="text-align: center; line-height: 1.42857;">, the mapper is an extremely powerful tool that allows users to easily&nbsp;create a map fully compatible with TF2 in a matter of seconds</span><span style="text-align: center; line-height: 1.42857;">.</span><span style="text-align: center; line-height: 1.42857;"> Directed at both amateurs and Hammer veterans, this program eliminates the learning curve of Hammer and also speeds up the map-making process for those people, respectively.&nbsp;</span><span style="line-height: 1.42857; text-align: center;">Features include:</span></p>
+
+<ul>
+	<li style="list-style-type:none;"><font size="5"><b>Construct</b> simple maps with the press of a few buttons</font></li>
+	<li style="list-style-type:none;"><font size="5"><b>Use</b> prefabs to construct world geometry</font></li>
+	<li style="list-style-type:none;"><font size="5"><b>Create</b> your <i>own</i> prefabs for use in the program</font></li>
+</ul>
+
+<p>Now <em>you</em> can create your very own TF2 map without any previous knowledge of Hammer. Currently in release 1.0.2</p>
+
+<h2>How Does It Work?</h2>
+
+<p style="text-align: left;">&nbsp; &nbsp; Maps are created with &quot;blocks&quot;&nbsp;each 512x512 hammer units big. Every time you click a button on&nbsp;the grid in the work area, it places a block down with whatever prefab you have selected in the prefab list. Once you layout your map in the work area grid, you can either <strong>save</strong> it as an EZ Mapper File (*.ezm) to work on it later, or <strong>export</strong> it as a Valve Map File&nbsp;(*.VMF) that you can then open up with hammer. Then, you have the option of editing the map even further (by applying textures, patching up any fine details), or compiling the map for play in Team Fortress&nbsp;2.</p>
+You can find the mapper at <a href="http://github.com/baldengineers/easytf2_mapper" target="_blank">http://github.com/baldengineers/easytf2_mapper</a>. Instructions are located on the <a href="http://github.com/baldengineers/easytf2_mapper/wiki" target="_blank">wiki</a> for how to operate it.
+
+<h2>Screenshots</h2>
+
+<img src="https://camo.githubusercontent.com/51e84d4421e240689349f71ba430c0edeb5ff51b/687474703a2f2f692e696d6775722e636f6d2f314372563075412e6a70672532303d343337783338332e35" class="screenshots"/>
+<img src="https://camo.githubusercontent.com/d44d06ab010a5cee13d3354dd6cda0634ae25009/687474703a2f2f692e696d6775722e636f6d2f536832386b44572e706e672532303d343337783338332e35" class="screenshots" /><br />
+<img src="https://camo.githubusercontent.com/75676fd519239dc04385fc132b16b1832bfcfe45/687474703a2f2f692e696d6775722e636f6d2f7a45394b6c496d2e6a70672532303d343337783338332e35" class="screenshots" />
+<img src="https://camo.githubusercontent.com/a7f0d34e46c3b580f9556e5de241660d211bf18a/687474703a2f2f692e696d6775722e636f6d2f317854507878792e6a70672532303d343337783338332e35" class="screenshots" /><br />
+<a name="dwnlds"></a> <a href=" http://imgur.com/a/gsmdQ" target="_blank"><h6><b>View More...</b></h6></a>
+&nbsp;
+
+<h2>Downloads</h2>
+
+<p><b>For Devs:</b></p>
+<a href="https://github.com/baldengineers/easytf2_mapper/archive/master.zip">Easy TF2 Mapper Latest Version (source, modules required)</a><br />
+<a href="http://github.com/baldengineers/easytf2_mapper/wiki/Required-Modules-(Source)" target="_blank">Required Modules for Source Code</a><br />
+______
+<p><b>Windows Executable</b></p>
+<a href="https://drive.google.com/file/d/0B0SIyq2R_iJVSm9RZVZycHg2eUU" target="_blank">Easy TF2 Mapper Release 1.0.2</a><br />
+<a href="https://drive.google.com/file/d/0B0SIyq2R_iJVMldFRS01dk92M0k" target="_blank">Easy TF2 Mapper Release 1.0.0</a><br />
+<a href="http://tf2mapper.com/files/easytf2mapper_latest.zip" target="_blank">Easy TF2 Mapper Beta 2.6.5 (win)</a><br />
+<a href="https://drive.google.com/open?id=0B0SIyq2R_iJVei1yRXFiOU11eEU" target="_blank">Easy TF2 Mapper Beta 2.6.1 (win)</a><br />
+<a href="https://drive.google.com/open?id=0B0SIyq2R_iJVT3JvNlJmdnBzREE" target="_blank">Easy TF2 Mapper Beta 2.6.0 (win)</a><br />
+<a href="https://drive.google.com/open?id=0B0SIyq2R_iJVcFIyZDR3VktyNkE" target="_blank">Easy TF2 Mapper Beta 2.5.5 (win)</a><br />
+<a href="https://drive.google.com/open?id=0B0SIyq2R_iJVRjg1RzViWkhhdWc" target="_blank">Easy TF2 Mapper Beta 2.5.1 (win)</a><br />
+<a href="https://drive.google.com/open?id=0B0SIyq2R_iJVSXJJa0xLUi1mX2s" target="_blank">Easy TF2 Mapper Beta 2.5.0 (win)</a><br />
+______
+<p><b>Updater/Installer</b></p>
+<a href="http://tf2mapper.com/files/updater.exe" target="_blank">Updater/Installer File.</a>
+
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;YOU MUST RUN THIS AS AN ADMINISTRATOR! Place in directory you want the latest version installed in. Said directory needs to be empty, otherwise some graphical and miscellaneous errors might happen. This executable will grab the latest windows redistributable and install it into the folder this is placed in. This is currently experimental, so if you want a surefire installation, use one of the zips. <a name="about"></a></p>
+&nbsp;
+
+<h2>About</h2>
+
+<p align="left"><i><b><font size="8">W</font>e are committed to presenting intricate matters in a simplistic manner...</b></i></p>
 
 
+<div class="imgContainer"><a href="http://steamcommunity.com/id/jonyTF" target="_blank"><img alt="jonypic" src="jonypic.png" style="width: 184px; height: 184px;" /> </a>
 
-        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<p><a href="http://steamcommunity.com/id/jonyTF" target="_blank">jony</a></p></div>
 
+<div class="imgContainer"><a href="http://steamcommunity.com/id/pepetoads" target="_blank"><img alt="toadspic" src="toadspic_ao.png" style="width: 184px; height: 184px;" /> </a>
 
-        <title>Bald Engineers</title>
-        <link href="style.css" rel="stylesheet" type="text/css" />
-        <style type="text/css">
-            <!-- .style8 {
-                color: #0000FF
-            }
-            -->
-        </style>
-    </head>
+<p><a href="http://steamcommunity.com/id/pepetoads" target="_blank">toads</a></p></div>
 
+<br/>
 
-    <body>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;We are the Bald Engineers, a group of two Team Fortress 2 players that wanted to leave a lasting impact in the TF2 community (and hopefully obtain a community weapon in the process). Thus emerged the innovative and brilliant &quot;Easy TF2 Mapper&quot;. Although the name may sound cheesy, it is an extremely powerful tool that can create a map fully compatible with TF2 in a matter of seconds. While we aren&#39;t playing TF2, you will probably find us developing one of our newest programs. Currently, we only have one program: The Easy TF2 Mapper. If you would like to follow our programs, please check out our <a href="https://github.com/baldengineers">Github page</a>.</p>
 
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;How did this all start anyhow? Well, the two team members, both self-taught in the programing language of <samp><font size="3">python</font></samp>, combined both of their strengths, technicality, practicality, and efficiency, to conceive a program extensive in its simplicity and usefulness. Although countless debates raged on about good coding practices between the two, in the end, their teamwork weaved the intricate puzzle pieces into place to complete the mapper.</p>
+<!--third paragraph is about our values (not for profit)-->
 
-        <div id="contain">
-            <div id="header">
-                 <h1 class="style1 style7 style5 style5 style8"></h1>
+<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;Our organization is not entirely aimed at profiting from our work. We care about our users, and accept any constructive criticism, suggestions for new features, questions, concerns, or&nbsp;comments that you may have. Just complete the form below:</p>
+<!--<form align="left" action="MAILTO:toadsrc@gmail.com" method="post" enctype="text/plain">
+Name(optional)<br>
+<input name="name" type="text" /><br />
+E-mail<br>
+<input name="mail" type="text" /><br>
+Body<br />
+<textarea cols="50" name="comment" rows="5"></textarea><br><br>
+<input type="submit" value="Send"> 
+</form>-->
 
-                <div id="leftcol">
+<form action="contact-form-handler.php" align="center" method="post" name="contact_form" style="margin-right:26%;margin-left:26%;background-color: #eee;"><b>Your Name:</b><br />
+<input name="name" type="text" /><br />
+<b>Email Address:</b><br />
+<input name="email" type="text" /><br />
+<b>Message:</b><br />
+<textarea cols="50" name="message" rows="5"></textarea><br />
+<br />
+<input type="submit" value="Submit" /><br />
+&nbsp;</form>
+<br />
+<br />
 
-                    <div id="navcontainer">
-                        <!--<u1>lol</u1>-->
-                        <!--<a href="http://github.com/baldengineers/easytf2_mapper">The Easy TF2 Mapper</a>-->
-                        <!--<u1>Menu</u1>-->
-                        <div id="currentpage">
-                             <a href="index.html">Home</a>
-                        </div>
-                         <a href="about/index.html">About Us</a>
-                         <a href="programs/index.html">Programs</a>
-                    </div>
+<!-- UNUSED<a name="steam"></a>-->
+</div>
+</div>
 
-                </div>
+<footer>
+<div class="container" align="center">
 
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/baldengineers/easytf2_mapper" data-icon="octicon-star" data-style="mega" data-count-href="/baldengineers/easytf2_mapper/stargazers" data-count-api="/repos/baldengineers/easytf2_mapper#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star baldengineers/easytf2_mapper on GitHub">Star</a> <br /> <br />
 
-                <div id="content">
-                     <h2 class="style5"> Welcome </h2>
+<!-- Place this tag right after the last button or just before your close body tag. -->
+<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
 
+&copy;&nbsp;2016 Bald Engineers<a href="obama.mp4">.</a>
+</div>
+</footer>
 
-                    <p>This is the official website of the Bald Engineers. Please feel free to contact us with questions, comments, or feedback about our programs.</p>
+<script language="JavaScript">
+var frmvalidator  = new Validator("contact_form");
+frmvalidator.addValidation("name","req","Please provide your name");
+frmvalidator.addValidation("email","req","Please provide your email");
+frmvalidator.addValidation("email","email",
+  "Please enter a valid email address");
+</script> 
 
-
-
-
-                     <h2 class="style5"> Contact </h2>
-
-                    <p>Send either one of us a message on steam (<a href="http://steamcommunity.com/id/pepetoads">toads</a> | <a href="http://steamcommunity.com/id/jonytf">jony</a>), or send an email with questions or some sh*t about a program at <a href="mailto:toadsrc@gmail.com?body=Hi Toads!">toadsrc@gmail.com</a>, or <a href="mailto:contact@pepetoads.com?body=Hi Toads!">contact@pepetoads.com</a></p>
-
-                    <p>&nbsp;</p>
-
-
-                    <p>&nbsp;</p>
-
-                    <p>&nbsp;</p>
-
-
-                </div>
-
-
-                <div id="footer">
-
-                    <p class="style5 style6">
-Copyright © 2016 Bald Engineers | All Rights Reserved  </p>
-
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-    </body>
-
+</body>
 </html>
